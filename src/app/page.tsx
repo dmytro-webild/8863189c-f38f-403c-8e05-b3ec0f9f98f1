@@ -10,7 +10,7 @@ import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleC
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
-import ProductCardThree from '@/components/sections/product/ProductCardThree';
+import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import { Leaf, Scissors } from "lucide-react";
 
@@ -111,18 +111,16 @@ export default function LandingPage() {
   </div>
 
   <div id="products" data-section="products">
-      <ProductCardThree
+      <ProductCardFour
       animationType="slide-up"
       textboxLayout="split"
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={false}
       products={[
-        { id: "1", name: "Engrais organique", price: "29.99$", imageSrc: "http://img.b2bpic.net/free-photo/top-view-container-leaves_23-2148883456.jpg" },
-        { id: "2", name: "Semence gazon", price: "19.99$", imageSrc: "http://img.b2bpic.net/free-photo/gardener-repotting-houseplant_53876-127240.jpg" },
-        { id: "3", name: "Paillis cèdre", price: "12.50$", imageSrc: "http://img.b2bpic.net/free-photo/adult-reusing-objects-creative-ways_23-2149411787.jpg" },
-        { id: "4", name: "Composte biologique local", price: "24.99$", imageSrc: "http://img.b2bpic.net/free-photo/creative-flat-lay-gardening-concept_23-2148195487.jpg" },
-        { id: "5", name: "Coupe-bordure", price: "89.99$", imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-gardening-composition_23-2148128654.jpg" },
-        { id: "6", name: "Sécateur pro", price: "34.50$", imageSrc: "http://img.b2bpic.net/free-photo/tools-plants-wooden-table-with-copy-space_23-2148509953.jpg" },
+        { id: "1", name: "Engrais organique", price: "35.00$", variant: "10kg", imageSrc: "http://img.b2bpic.net/free-photo/top-view-container-leaves_23-2148883456.jpg" },
+        { id: "2", name: "Semence gazon", price: "25.00$", variant: "5kg", imageSrc: "http://img.b2bpic.net/free-photo/gardener-repotting-houseplant_53876-127240.jpg" },
+        { id: "3", name: "Paillis cèdre", price: "15.00$", variant: "Sac 50L", imageSrc: "http://img.b2bpic.net/free-photo/adult-reusing-objects-creative-ways_23-2149411787.jpg" },
+        { id: "4", name: "Composte biologique", price: "30.00$", variant: "Sac 20kg", imageSrc: "http://img.b2bpic.net/free-photo/creative-flat-lay-gardening-concept_23-2148195487.jpg" },
       ]}
       title="Produits spécialisés"
       description="Découvrez notre gamme de produits pour entretenir votre jardin comme un pro."
