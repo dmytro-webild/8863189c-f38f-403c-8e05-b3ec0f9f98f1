@@ -120,7 +120,7 @@ export default function LandingPage() {
         { id: "1", name: "Engrais organique", price: "29.99$", imageSrc: "http://img.b2bpic.net/free-photo/top-view-container-leaves_23-2148883456.jpg" },
         { id: "2", name: "Semence gazon", price: "19.99$", imageSrc: "http://img.b2bpic.net/free-photo/gardener-repotting-houseplant_53876-127240.jpg" },
         { id: "3", name: "Paillis cèdre", price: "12.50$", imageSrc: "http://img.b2bpic.net/free-photo/adult-reusing-objects-creative-ways_23-2149411787.jpg" },
-        { id: "4", name: "Nutriments sol", price: "24.99$", imageSrc: "http://img.b2bpic.net/free-photo/creative-flat-lay-gardening-concept_23-2148195487.jpg" },
+        { id: "4", name: "Composte biologique local", price: "24.99$", imageSrc: "http://img.b2bpic.net/free-photo/creative-flat-lay-gardening-concept_23-2148195487.jpg" },
         { id: "5", name: "Coupe-bordure", price: "89.99$", imageSrc: "http://img.b2bpic.net/free-photo/flat-lay-gardening-composition_23-2148128654.jpg" },
         { id: "6", name: "Sécateur pro", price: "34.50$", imageSrc: "http://img.b2bpic.net/free-photo/tools-plants-wooden-table-with-copy-space_23-2148509953.jpg" },
       ]}
