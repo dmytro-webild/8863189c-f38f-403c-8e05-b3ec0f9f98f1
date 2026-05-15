@@ -117,14 +117,13 @@ export default function LandingPage() {
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={false}
       products={[
-        { id: "1", name: "Engrais organique", price: "35.00$", variant: "10kg", imageSrc: "http://img.b2bpic.net/free-photo/top-view-container-leaves_23-2148883456.jpg" },
-        { id: "2", name: "Semence gazon", price: "25.00$", variant: "5kg", imageSrc: "http://img.b2bpic.net/free-photo/gardener-repotting-houseplant_53876-127240.jpg" },
-        { id: "3", name: "Paillis cèdre", price: "5$ livraison inclus
-", variant: "Sac 50L", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778858805642-6ewe00cl.png" },
-        { id: "4", name: "Composte biologique", price: "1$ la livre ", variant: "Sac 20kg", imageSrc: "http://img.b2bpic.net/free-photo/creative-flat-lay-gardening-concept_23-2148195487.jpg" },
+        { id: "1", name: "Engrais organique", price: "45.00$", variant: "10kg", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778860112213-a1qlm6nx.webp" },
+        { id: "2", name: "Semence gazon", price: "40.00$", variant: "5kg", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778859819971-8t5v2mpw.jpg" },
+        { id: "3", name: "Paillis de cèdre", price: "5.00$ le sac", variant: "Sac 50L", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778859970002-lo90iwsa.webp" },
+        { id: "4", name: "Compost premium", price: "8.00$ / 20kg ", variant: "Sac 20kg", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778860016221-ml1h3j3c.jpg" },
       ]}
       title="Produits spécialisés"
-      description="Découvrez notre gamme de produits pour entretenir votre jardin comme un pro."
+      description="Découvrez notre gamme de produits premium pour entretenir votre jardin comme un pro."
     />
   </div>
 
@@ -135,20 +134,20 @@ export default function LandingPage() {
       animationType="slide-up"
       plans={[
         {
-          id: "basic",          badge: "Basique",          price: "49$",          subtitle: "Pour les petits terrains",          features: ["Tonte hebdomadaire", "Soufflage des trottoirs", "Support par email"],
-          buttons: [{ text: "Choisir", href: "#contact" }]
+          id: "basic",          badge: "Basic ",          price: "45$ / semaine",          subtitle: "Forfait standard peut varier selon la superficie   ",          features: ["Tonte soignée", "Délimitation des bordures", "Support prioritaire"],
+          buttons: [{ text: "Commander", href: "#contact" }]
         },
         {
-          id: "pro",          badge: "Populaire",          price: "89$",          subtitle: "La tranquillité totale",          features: ["Tout du forfait basique", "Taille de haies mensuelle", "Fertilisation incluse"],
-          buttons: [{ text: "Choisir", href: "#contact" }]
+          id: "pro",          badge: "Populaire",          price: "99$ / mois",          subtitle: "La tranquillité totale",          features: ["", "Taille de haies incluse", "Fertilisation saisonnière", "Nettoyage débris"],
+          buttons: [{ text: "Commander", href: "#contact" }]
         },
         {
-          id: "premium",          badge: "Premium",          price: "149$",          subtitle: "Entretien complet pro",          features: ["Tout du forfait Pro", "Aménagement paysager", "Priorité intervention"],
-          buttons: [{ text: "Choisir", href: "#contact" }]
+          id: "premium",          badge: "Expert",          price: "199$ / mois",          subtitle: "Entretien paysager complet",          features: ["Tonte hebdomadaire", "Entretien complet des plates-bandes", "Traitement horticole", "Priorité d'intervention"],
+          buttons: [{ text: "Commander", href: "#contact" }]
         },
       ]}
       title="Forfaits entretien"
-      description="Nos plans flexibles sont conçus pour offrir une valeur ajoutée maximale à votre espace extérieur, garantissant une pelouse impeccable et un jardin vibrant tout au long de la saison, sans effort de votre part."
+      description="Des forfaits pensés pour la longévité de votre jardin, garantissant une esthétique impeccable et une santé optimale sans que vous ayez à lever le petit doigt."
     />
   </div>
 
