@@ -2,22 +2,11 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
+import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
-import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
-import { Leaf, Scissors, TreeDeciduous, Shovel } from "lucide-react";
-import { useRouter } from 'next/navigation';
 
-export default function ServicesPage() {
-  const router = useRouter();
-
-  const features = [
-    { title: "Tonte de pelouse", description: "Tonte hebdomadaire avec ramassage.", bentoComponent: "reveal-icon" as const, icon: Scissors },
-    { title: "Nettoyage", description: "Ouverture et fermeture.", bentoComponent: "reveal-icon" as const, icon: Leaf },
-    { title: "Taille de haies", description: "Taille précise par experts.", bentoComponent: "reveal-icon" as const, icon: TreeDeciduous },
-    { title: "Aménagement", description: "Installation de paillis, plantation.", bentoComponent: "reveal-icon" as const, icon: Shovel }
-  ];
-
+export default function SoumissionPage() {
   return (
     <ThemeProvider
         defaultButtonVariant="hover-magnetic"
@@ -45,20 +34,25 @@ export default function ServicesPage() {
             />
         </div>
 
-        <div id="services" data-section="services">
-            <FeatureBento
-            animationType="slide-up"
-            textboxLayout="split"
+        <div id="contact" data-section="contact">
+            <ContactSplitForm
+            title="Demande de soumission"
+            description="Remplissez ce formulaire pour recevoir une estimation gratuite pour vos besoins d'entretien paysager."
+            inputs={[
+              { name: "name", type: "text", placeholder: "Votre nom complet", required: true },
+              { name: "email", type: "email", placeholder: "Votre adresse courriel", required: true },
+              { name: "address", type: "text", placeholder: "Adresse du terrain", required: true }
+            ]}
+            textarea={{ name: "message", placeholder: "Détails du service souhaité (ex: tonte, taille, nettoyage...)", rows: 4, required: true }}
+            buttonText="Envoyer ma demande"
+            onSubmit={(data) => { console.log("Form submitted:", data); alert("Merci! Votre demande a bien été envoyée."); }}
             useInvertedBackground={false}
-            title="Nos services détaillés"
-            description="Solutions professionnelles toute l'année."
-            features={features.map(f => ({ ...f, button: { text: "Soumission", href: "/soumission" } }))}
             />
         </div>
 
         <div id="footer" data-section="footer">
             <FooterBaseCard
-            logoText="Entretien Saisonnier"
+            logoText="Entretien Saisonnier JRS inc.\nTel. 579-420-4510"
             columns={[
                 { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/pricing" }] },
                 { title: "Informations", items: [{ label: "À propos", href: "/about" }, { label: "FAQ", href: "/faq" }, { label: "Soumission", href: "/soumission" }] },
