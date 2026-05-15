@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactSplit from '@/components/sections/contact/ContactSplit';
+import ContactText from '@/components/sections/contact/ContactText';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
@@ -11,7 +11,6 @@ import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaA
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
-import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import { Leaf, Scissors } from "lucide-react";
 
 export default function LandingPage() {
@@ -152,24 +151,6 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="testimonials" data-section="testimonials">
-      <TestimonialCardOne
-      animationType="slide-up"
-      textboxLayout="default"
-      gridVariant="uniform-all-items-equal"
-      useInvertedBackground={false}
-      testimonials={[
-        { id: "1", name: "Marie L.", role: "Résidente", company: "Granby", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/front-view-women-posing-together_23-2149962675.jpg" },
-        { id: "2", name: "Jean-Pierre C.", role: "Entreprise", company: "Granby", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/man-sitting-near-house-looking-camera_259150-59313.jpg" },
-        { id: "3", name: "Sophie G.", role: "Résidente", company: "Bromont", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/portrait-senior-man-hat-gardening-with-granddaugher_1157-38489.jpg" },
-        { id: "4", name: "Marc-André D.", role: "Résidente", company: "Granby", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/greenhouse-owner-presenting-flowers-options-potential-customer-retailer_158595-7006.jpg" },
-        { id: "5", name: "Julie B.", role: "Propriétaire", company: "Granby", rating: 5, imageSrc: "http://img.b2bpic.net/free-photo/side-view-smiley-woman-holding-her-her_23-2148631401.jpg" },
-      ]}
-      title="Ce que nos clients disent"
-      description="La satisfaction de nos clients à Granby est notre meilleure publicité."
-    />
-  </div>
-
   <div id="faq" data-section="faq">
       <FaqBase
       textboxLayout="default"
@@ -182,6 +163,15 @@ export default function LandingPage() {
       title="Questions fréquentes"
       description="Tout ce que vous devez savoir sur nos services saisonniers."
       faqsAnimation="blur-reveal"
+    />
+  </div>
+
+  <div id="contact" data-section="contact">
+      <ContactText
+      text="Contactez-nous aujourd'hui pour une estimation gratuite sans engagement."
+      background={{ variant: "plain" }}
+      buttons={[{ text: "Envoyer" }]}
+      useInvertedBackground={false}
     />
   </div>
 
