@@ -37,7 +37,7 @@ export default function LandingPage() {
         { name: "Tarifs", id: "pricing" },
         { name: "Contact", id: "contact" },
       ]}
-      brandName="Entretien Saisonnier"
+      brandName="Entretien Saisonnier JRS inc."
     />
   </div>
 
@@ -47,16 +47,16 @@ export default function LandingPage() {
       title="Entretien professionnel pour votre terrain à Granby"
       description="Nous offrons des services complets d'entretien paysager saisonnier pour particuliers et entreprises. Confiez vos espaces verts aux experts locaux."
       leftCarouselItems={[
-        { imageSrc: "http://img.b2bpic.net/free-photo/senior-man-working-field_329181-12419.jpg", imageAlt: "landscaping service garden maintenance" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/people-helping-neighbors-with-grass-lawn_23-2149139731.jpg", imageAlt: "landscaping service garden maintenance" },
+        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778855509339-6i8saesy.jpg", imageAlt: "landscaping service garden maintenance" },
+        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778856008662-2kt0ravy.png", imageAlt: "landscaping service garden maintenance" },
         { imageSrc: "http://img.b2bpic.net/free-photo/gardener-with-weedwacker-cutting-grass-garden_329181-20539.jpg", imageAlt: "landscaping service garden maintenance" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/cheerful-senior-man-cutting-overgrown-bushes_651396-1547.jpg", imageAlt: "landscaping service garden maintenance" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/unrecognizable-man-psushing-wheelbarrow-full-seedling_329181-20532.jpg", imageAlt: "landscaping service garden maintenance" },
+        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778855458069-s2znur77.jpg", imageAlt: "landscaping service garden maintenance" },
+        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778855396848-hsmwwzxe.jpg", imageAlt: "landscaping service garden maintenance" },
       ]}
       rightCarouselItems={[
-        { imageSrc: "http://img.b2bpic.net/free-photo/senior-mows-grass-yard-with-lawn-mower_1157-29769.jpg", imageAlt: "landscaping service garden maintenance" },
+        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778856364767-3bjl8sig.jpg", imageAlt: "landscaping service garden maintenance" },
         { imageSrc: "http://img.b2bpic.net/free-photo/contrasting-outdoor-textures_23-2149702189.jpg", imageAlt: "landscaping service garden maintenance" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/young-gardener-woman-with-short-hair-apron-hat-showing-shovel-smiling-with-happy-face_141793-102537.jpg", imageAlt: "landscaping service garden maintenance" },
+        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778855585031-0qj3mf3o.jpg", imageAlt: "landscaping service garden maintenance" },
         { imageSrc: "http://img.b2bpic.net/free-photo/senior-man-working-field-with-plants_329181-12433.jpg", imageAlt: "landscaping service garden maintenance" },
         { imageSrc: "http://img.b2bpic.net/free-photo/close-up-strong-man-gloves-cutting-leaves-his-garden-farmer-spending-summer-morning-working-garden-near-countryside-house_176420-19902.jpg", imageAlt: "landscaping service garden maintenance" },
       ]}
