@@ -131,7 +131,7 @@ export default function LandingPage() {
 
   <div id="pricing" data-section="pricing">
       <PricingCardTwo
-      textboxLayout="default"
+      textboxLayout="split-actions"
       useInvertedBackground={true}
       animationType="slide-up"
       plans={[
@@ -149,7 +149,7 @@ export default function LandingPage() {
         },
       ]}
       title="Forfaits entretien"
-      description="Des options flexibles pour répondre aux besoins de votre terrain."
+      description="Nos plans flexibles sont conçus pour offrir une valeur ajoutée maximale à votre espace extérieur, garantissant une pelouse impeccable et un jardin vibrant tout au long de la saison, sans effort de votre part."
     />
   </div>
 
