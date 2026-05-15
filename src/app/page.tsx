@@ -41,7 +41,7 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroSplitDoubleCarousel
-      background="gradient-bars"
+      background={{ variant: "gradient-bars" }}
       title="Entretien professionnel pour votre terrain à Granby"
       description="Nous offrons des services complets d'entretien paysager saisonnier pour particuliers et entreprises. Confiez vos espaces verts aux experts locaux."
       leftCarouselItems={[
@@ -61,8 +61,8 @@ export default function LandingPage() {
       title="Experts paysagistes à Granby"
       description="Avec des années d'expérience, Entretien Saisonnier transforme votre terrain en havre de paix. Qualité et ponctualité sont nos priorités."
       metrics={[
-        { value: "2+ ", title: "Années d'expérience" },
-        { value: "100+ ", title: "Projets réalisés" },
+        { value: "2+", title: "Années d'expérience" },
+        { value: "100+", title: "Projets réalisés" },
         { value: "98%", title: "Satisfaction client" },
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778854433759-l14z98kz.jpg"
