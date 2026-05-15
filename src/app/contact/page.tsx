@@ -40,9 +40,8 @@ export default function ContactPage() {
             background={{ variant: "plain" }}
             tag="Contactez-nous"
             title="Prêt à transformer votre terrain?"
-            description="Contactez-nous aujourd'hui pour une estimation gratuite sans engagement."
-            imageSrc="http://img.b2bpic.net/free-photo/greenhouse-owner-presenting-flowers-options-potential-customer-retailer_158595-7007.jpg"
-            mediaAnimation="slide-up"
+            description="Remplissez vos détails pour obtenir une soumission."
+            onSubmit={(email) => { window.location.href = `mailto:entretien.saisonnier.rv@gmail.com?subject=Nouvelle demande de service&body=Courriel: ${email}%0D%0A%0D%0ANom:%0D%0AAdresse:%0D%0AService souhaité:%0D%0A`; }}
             buttonText="Envoyer"
             />
         </div>
