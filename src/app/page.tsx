@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactText from '@/components/sections/contact/ContactText';
+import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
@@ -34,7 +34,7 @@ export default function LandingPage() {
         { name: "Accueil", id: "hero" },
         { name: "Services", id: "/services" },
         { name: "Tarifs", id: "pricing" },
-        { name: "Contact", id: "/contact" },
+        { name: "Contact", id: "contact" },
         { name: "Facebook", id: "https://www.facebook.com/" },
       ]}
       brandName="Entretien Saisonnier JRS inc."
@@ -60,7 +60,7 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/senior-man-working-field-with-plants_329181-12433.jpg", imageAlt: "landscaping service garden maintenance" },
         { imageSrc: "http://img.b2bpic.net/free-photo/close-up-strong-man-gloves-cutting-leaves-his-garden-farmer-spending-summer-morning-working-garden-near-countryside-house_176420-19902.jpg", imageAlt: "landscaping service garden maintenance" },
       ]}
-      buttons={[{ text: "Demandez une soumission", href: "/contact" }]}
+      buttons={[{ text: "Demandez une soumission", href: "#contact" }]}
       avatars={[
         { src: "http://img.b2bpic.net/free-photo/front-view-senior-man-garden_23-2148256666.jpg", alt: "Front view senior man in garden" },
         { src: "http://img.b2bpic.net/free-photo/senior-man-working-field-with-flowers_329181-12453.jpg", alt: "Senior man working in the field with flowers" },
@@ -135,15 +135,15 @@ export default function LandingPage() {
       plans={[
         {
           id: "basic",          badge: "Basic ",          price: "45$ / semaine",          subtitle: "Forfait standard peut varier selon la superficie   ",          features: ["Tonte soignée", "Délimitation des bordures", "Support prioritaire"],
-          buttons: [{ text: "Commander", href: "/contact" }]
+          buttons: [{ text: "Commander", href: "#contact" }]
         },
         {
           id: "pro",          badge: "Populaire",          price: "180$ / heure",          subtitle: "La tranquillité totale",          features: ["", "Taille de haies et arbuste", "Fertilisation saisonnière", "Nettoyage débris"],
-          buttons: [{ text: "Commander", href: "/contact" }]
+          buttons: [{ text: "Commander", href: "#contact" }]
         },
         {
           id: "premium",          badge: "Expert",          price: "180$ / heure",          subtitle: "Entretien paysager complet",          features: ["Ramassage des feuille a l'automne  ", "Entretien complet des plates-bandes", "Traitement horticole", "Priorité d'intervention"],
-          buttons: [{ text: "Commander", href: "/contact" }]
+          buttons: [{ text: "Commander", href: "#contact" }]
         },
       ]}
       title="Forfaits entretien"
@@ -167,11 +167,13 @@ export default function LandingPage() {
   </div>
 
   <div id="contact" data-section="contact">
-      <ContactText
-      text="Contactez-nous aujourd'hui pour une estimation gratuite sans engagement."
+      <ContactSplit
       background={{ variant: "plain" }}
-      buttons={[{ text: "Envoyer" }]}
-      useInvertedBackground={false}
+      tag="Contactez-nous"
+      title="Demandez votre soumission"
+      description="Entrez vos coordonnées et le service souhaité pour recevoir une estimation par courriel."
+      onSubmit={(email) => { window.location.href = `mailto:entretien.saisonnier.rv@gmail.com?subject=Nouvelle demande de service&body=Courriel: ${email}%0D%0A%0D%0ANom:%0D%0AAdresse:%0D%0AService souhaité:%0D%0A`; }}
+      buttonText="Envoyer"
     />
   </div>
 
