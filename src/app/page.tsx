@@ -120,7 +120,7 @@ export default function LandingPage() {
         { id: "1", name: "Engrais organique", price: "45.00$", variant: "10kg", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778860112213-a1qlm6nx.webp" },
         { id: "2", name: "Semence gazon", price: "40.00$", variant: "5kg", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778859819971-8t5v2mpw.jpg" },
         { id: "3", name: "Paillis de cèdre", price: "5.00$ le sac", variant: "Sac 50L", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778859970002-lo90iwsa.webp" },
-        { id: "4", name: "Compost premium", price: "8.00$ / 20kg ", variant: "Sac 20kg", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778860016221-ml1h3j3c.jpg" },
+        { id: "4", name: "Compost premium", price: "2.20$ / 1kg ", variant: "Sac 20kg", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778860016221-ml1h3j3c.jpg" },
       ]}
       title="Produits spécialisés"
       description="Découvrez notre gamme de produits premium pour entretenir votre jardin comme un pro."
@@ -138,11 +138,11 @@ export default function LandingPage() {
           buttons: [{ text: "Commander", href: "#contact" }]
         },
         {
-          id: "pro",          badge: "Populaire",          price: "99$ / mois",          subtitle: "La tranquillité totale",          features: ["", "Taille de haies incluse", "Fertilisation saisonnière", "Nettoyage débris"],
+          id: "pro",          badge: "Populaire",          price: "180$ / heure",          subtitle: "La tranquillité totale",          features: ["", "Taille de haies et arbuste", "Fertilisation saisonnière", "Nettoyage débris"],
           buttons: [{ text: "Commander", href: "#contact" }]
         },
         {
-          id: "premium",          badge: "Expert",          price: "199$ / mois",          subtitle: "Entretien paysager complet",          features: ["Tonte hebdomadaire", "Entretien complet des plates-bandes", "Traitement horticole", "Priorité d'intervention"],
+          id: "premium",          badge: "Expert",          price: "180$ / heure",          subtitle: "Entretien paysager complet",          features: ["Ramassage des feuille a l'automne  ", "Entretien complet des plates-bandes", "Traitement horticole", "Priorité d'intervention"],
           buttons: [{ text: "Commander", href: "#contact" }]
         },
       ]}
