@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
-import { Leaf, Scissors, TreeDeciduous, Shovel, Snowflake } from "lucide-react";
+import { Leaf, Scissors, TreeDeciduous, Shovel } from "lucide-react";
 
 export default function ServicesPage() {
   return (
@@ -46,8 +46,7 @@ export default function ServicesPage() {
                 { title: "Tonte de pelouse", description: "Tonte hebdomadaire avec ramassage de gazon pour une pelouse uniforme.", bentoComponent: "reveal-icon", icon: Scissors },
                 { title: "Nettoyage saisonnier", description: "Ouverture et fermeture, ratissage de feuilles et nettoyage des débris.", bentoComponent: "reveal-icon", icon: Leaf },
                 { title: "Taille de haies", description: "Taille précise de vos haies et arbustes par des experts paysagistes.", bentoComponent: "reveal-icon", icon: TreeDeciduous },
-                { title: "Aménagement", description: "Installation de paillis, plantation et entretien de plates-bandes.", bentoComponent: "reveal-icon", icon: Shovel },
-                { title: "Service hivernal", description: "Gestion des entrées et déneigement résidentiel ponctuel.", bentoComponent: "reveal-icon", icon: Snowflake }
+                { title: "Aménagement", description: "Installation de paillis, plantation et entretien de plates-bandes.", bentoComponent: "reveal-icon", icon: Shovel }
             ]}
             />
         </div>
