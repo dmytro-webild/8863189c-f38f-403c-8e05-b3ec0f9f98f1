@@ -2,16 +2,14 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactSplit from '@/components/sections/contact/ContactSplit';
-import FaqBase from '@/components/sections/faq/FaqBase';
-import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
-import { Leaf, Scissors, Sparkles, Star, Tag } from "lucide-react";
+import FeatureBento from '@/components/sections/feature/FeatureBento';
+import { Leaf, Scissors } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -32,11 +30,10 @@ export default function LandingPage() {
       <NavbarStyleCentered
       navItems={[
         { name: "Accueil", id: "hero" },
-        { name: "Services", id: "/services" },
+        { name: "Services", id: "services" },
         { name: "Produits", id: "products" },
         { name: "Tarifs", id: "pricing" },
-        { name: "Soumission", id: "/soumission" },
-        { name: "Facebook", id: "https://www.facebook.com/" },
+        { name: "À propos", id: "about" },
       ]}
       brandName="Entretien Saisonnier JRS inc."
     />
@@ -44,7 +41,7 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroSplitDoubleCarousel
-      background={{ variant: "gradient-bars" }}
+      background="gradient-bars"
       title="Entretien professionnel pour votre terrain à Granby"
       description="Nous offrons des services complets d'entretien paysager saisonnier pour particuliers et entreprises. Confiez vos espaces verts aux experts locaux."
       leftCarouselItems={[
@@ -54,8 +51,7 @@ export default function LandingPage() {
       rightCarouselItems={[
         { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778856364767-3bjl8sig.jpg", imageAlt: "landscaping service garden maintenance" },
       ]}
-      buttons={[{ text: "Demandez une soumission", href: "/soumission" }]}
-      avatarText="Reconnu par plus de 100+ clients locaux"
+      buttons={[{ text: "Demandez une soumission", href: "#contact" }]}
     />
   </div>
 
@@ -81,6 +77,8 @@ export default function LandingPage() {
       description="Découvrez notre sélection de produits pour entretenir votre terrain comme un pro."
       gridVariant="three-columns-all-equal-width"
       animationType="slide-up"
+      textboxLayout="split"
+      useInvertedBackground={false}
       products={[
         { id: "p1", name: "Fertilisant Premium", price: "29.99$", imageSrc: "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&q=80&w=400" },
         { id: "p2", name: "Paillis de cèdre", price: "12.50$", imageSrc: "https://images.unsplash.com/photo-1629429408208-d8f99e46a51d?auto=format&fit=crop&q=80&w=400" },
@@ -94,13 +92,13 @@ export default function LandingPage() {
       animationType="slide-up"
       textboxLayout="split"
       useInvertedBackground={true}
+      title="Nos services d'entretien"
+      description="Solutions adaptées à chaque saison."
       features={[
         { title: "Tonte de pelouse", description: "Tonte régulière pour un gazon uniforme.", bentoComponent: "reveal-icon", icon: Scissors },
         { title: "Nettoyage saisonnier", description: "Ouverture et fermeture de terrain.", bentoComponent: "reveal-icon", icon: Leaf },
         { title: "Taille de haies", description: "Taille précise pour une apparence impeccable.", bentoComponent: "reveal-icon", icon: Leaf },
       ]}
-      title="Nos services d'entretien"
-      description="Solutions adaptées à chaque saison."
     />
   </div>
 
@@ -109,13 +107,13 @@ export default function LandingPage() {
       textboxLayout="split-actions"
       useInvertedBackground={true}
       animationType="slide-up"
-      plans={[
-        { id: "basic", badge: "Basic", price: "45$ / semaine", subtitle: "Forfait standard", features: ["Tonte soignée", "Délimitation", "Support"], buttons: [{ text: "Commander", href: "/soumission" }] },
-        { id: "pro", badge: "Populaire", price: "180$ / heure", subtitle: "Tranquillité totale", features: ["Taille de haies", "Fertilisation"], buttons: [{ text: "Commander", href: "/soumission" }] },
-        { id: "premium", badge: "Expert", price: "180$ / heure", subtitle: "Complet", features: ["Ramassage feuilles", "Plates-bandes"], buttons: [{ text: "Commander", href: "/soumission" }] },
-      ]}
       title="Forfaits entretien"
       description="Des solutions sur mesure pour votre terrain."
+      plans={[
+        { id: "basic", badge: "Basic", price: "45$ / semaine", subtitle: "Forfait standard", features: ["Tonte soignée", "Délimitation", "Support"], buttons: [{ text: "Commander", href: "#contact" }] },
+        { id: "pro", badge: "Populaire", price: "180$ / heure", subtitle: "Tranquillité totale", features: ["Taille de haies", "Fertilisation"], buttons: [{ text: "Commander", href: "#contact" }] },
+        { id: "premium", badge: "Expert", price: "180$ / heure", subtitle: "Complet", features: ["Ramassage feuilles", "Plates-bandes"], buttons: [{ text: "Commander", href: "#contact" }] },
+      ]}
     />
   </div>
 
@@ -123,8 +121,8 @@ export default function LandingPage() {
       <FooterBaseCard
       logoText="Entretien Saisonnier"
       columns={[
-        { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/pricing" }] },
-        { title: "Informations", items: [{ label: "À propos", href: "/about" }, { label: "FAQ", href: "/faq" }, { label: "Soumission", href: "/soumission" }] },
+        { title: "Liens", items: [{ label: "Accueil", href: "#hero" }, { label: "Services", href: "#services" }, { label: "Tarifs", href: "#pricing" }] },
+        { title: "Informations", items: [{ label: "À propos", href: "#about" }, { label: "Produits", href: "#products" }] },
       ]}
       copyrightText="© 2025 Entretien Saisonnier | Granby, QC"
     />
