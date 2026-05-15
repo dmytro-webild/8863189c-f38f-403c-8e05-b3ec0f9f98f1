@@ -36,6 +36,7 @@ export default function LandingPage() {
         { name: "Services", id: "services" },
         { name: "Tarifs", id: "pricing" },
         { name: "Contact", id: "/contact" },
+        { name: "Facebook", id: "https://www.facebook.com/" },
       ]}
       brandName="Entretien Saisonnier JRS inc."
     />
