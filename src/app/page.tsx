@@ -174,6 +174,7 @@ export default function LandingPage() {
       description="Entrez vos coordonnées et le service souhaité pour recevoir une estimation par courriel."
       onSubmit={(email) => { window.location.href = `mailto:entretien.saisonnier.rv@gmail.com?subject=Nouvelle demande de service&body=Courriel: ${email}%0D%0A%0D%0ANom:%0D%0AAdresse:%0D%0AService souhaité:%0D%0A`; }}
       buttonText="Envoyer"
+      useInvertedBackground={false}
     />
   </div>
 
