@@ -10,8 +10,8 @@ import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleC
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
-import ProductCardFour from '@/components/sections/product/ProductCardFour';
-import { Leaf, Scissors } from "lucide-react";
+import ProductCardThree from '@/components/sections/product/ProductCardThree';
+import { Leaf, Scissors, Sparkles, Star, Tag } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -33,6 +33,7 @@ export default function LandingPage() {
       navItems={[
         { name: "Accueil", id: "hero" },
         { name: "Services", id: "/services" },
+        { name: "Produits", id: "products" },
         { name: "Tarifs", id: "pricing" },
         { name: "Soumission", id: "/soumission" },
         { name: "Facebook", id: "https://www.facebook.com/" },
@@ -72,6 +73,20 @@ export default function LandingPage() {
       mediaAnimation="slide-up"
       metricsAnimation="blur-reveal"
     />
+  </div>
+
+  <div id="products" data-section="products">
+      <ProductCardThree
+      title="Nos produits spécialisés"
+      description="Découvrez notre sélection de produits pour entretenir votre terrain comme un pro."
+      gridVariant="three-columns-all-equal-width"
+      animationType="slide-up"
+      products={[
+        { id: "p1", name: "Fertilisant Premium", price: "29.99$", imageSrc: "https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&q=80&w=400" },
+        { id: "p2", name: "Paillis de cèdre", price: "12.50$", imageSrc: "https://images.unsplash.com/photo-1629429408208-d8f99e46a51d?auto=format&fit=crop&q=80&w=400" },
+        { id: "p3", name: "Semences de gazon", price: "19.99$", imageSrc: "https://images.unsplash.com/photo-1596492784531-6e6ebf511000?auto=format&fit=crop&q=80&w=400" }
+      ]}
+      />
   </div>
 
   <div id="services" data-section="services">
