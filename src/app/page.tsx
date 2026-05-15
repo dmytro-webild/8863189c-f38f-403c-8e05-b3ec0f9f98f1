@@ -62,7 +62,7 @@ export default function LandingPage() {
       description="Nous offrons des services complets d'entretien paysager saisonnier pour particuliers et entreprises. Confiez vos espaces verts aux experts locaux."
       leftCarouselItems={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/senior-man-working-field_329181-12419.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/senior-man-working-field_329181-12419.jpg?_wi=1",
           imageAlt: "landscaping service garden maintenance",
         },
         {
@@ -182,7 +182,7 @@ export default function LandingPage() {
           title: "Satisfaction client",
         },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/happy-plant-parents-holding-their-potted-plants_53876-130018.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/happy-plant-parents-holding-their-potted-plants_53876-130018.jpg?_wi=1"
       mediaAnimation="slide-up"
       metricsAnimation="blur-reveal"
       imageAlt="landscaping team working outdoors"
@@ -208,7 +208,7 @@ export default function LandingPage() {
           description: "Ouverture et fermeture de terrain, ramassage de feuilles et débris.",
           bentoComponent: "reveal-icon",
           icon: Leaf,
-          imageSrc: "http://img.b2bpic.net/free-photo/senior-man-working-field_329181-12419.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/senior-man-working-field_329181-12419.jpg?_wi=2",
           imageAlt: "lawn mowing service grass trimming",
         },
         {
@@ -216,7 +216,7 @@ export default function LandingPage() {
           description: "Taille précise de vos haies et arbustes pour une apparence impeccable.",
           bentoComponent: "reveal-icon",
           icon: Leaf,
-          imageSrc: "http://img.b2bpic.net/free-photo/happy-plant-parents-holding-their-potted-plants_53876-130018.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/happy-plant-parents-holding-their-potted-plants_53876-130018.jpg?_wi=2",
           imageAlt: "lawn mowing service grass trimming",
         },
       ]}
