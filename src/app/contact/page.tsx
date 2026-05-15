@@ -28,7 +28,7 @@ export default function ContactPage() {
                 { name: "Services", id: "/services" },
                 { name: "Tarifs", id: "/pricing" },
                 { name: "Contact", id: "/contact" },
-                { name: "Facebook", id: "https://www.facebook.com/" },
+                { name: "Facebook", id: "https://www.facebook.com/search/top?q=entretien%20saisonnier%20jrs%20inc.&locale=fr_CA" },
             ]}
             brandName="Entretien Saisonnier JRS inc."
             />
