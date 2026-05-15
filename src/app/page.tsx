@@ -68,7 +68,7 @@ export default function LandingPage() {
         { src: "http://img.b2bpic.net/free-photo/young-man-safety-mask-gloves-shaping-bushes_651396-3823.jpg", alt: "Young man in safety mask and gloves shaping bushes" },
         { src: "http://img.b2bpic.net/free-photo/hard-working-mature-man-garden_329181-4627.jpg", alt: "Hard working mature man in garden" },
       ]}
-      avatarText="Reconnu par plus de 500+ clients locaux"
+      avatarText="Reconnu par plus de 100+ clients locaux"
     />
   </div>
 
@@ -78,11 +78,11 @@ export default function LandingPage() {
       title="Experts paysagistes à Granby"
       description="Avec des années d'expérience, Entretien Saisonnier transforme votre terrain en havre de paix. Qualité et ponctualité sont nos priorités."
       metrics={[
-        { value: "15+", title: "Années d'expérience" },
-        { value: "500+", title: "Projets réalisés" },
+        { value: "2+ ", title: "Années d'expérience" },
+        { value: "100+ ", title: "Projets réalisés" },
         { value: "98%", title: "Satisfaction client" },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/happy-plant-parents-holding-their-potted-plants_53876-130018.jpg"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778854433759-l14z98kz.jpg"
       mediaAnimation="slide-up"
       metricsAnimation="blur-reveal"
       imageAlt="landscaping team working outdoors"
