@@ -2,11 +2,12 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactSplit from '@/components/sections/contact/ContactSplit';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
+import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
+import { Leaf, Scissors, TreeDeciduous, Shovel, Snowflake } from "lucide-react";
 
-export default function ContactPage() {
+export default function ServicesPage() {
   return (
     <ThemeProvider
         defaultButtonVariant="hover-magnetic"
@@ -34,22 +35,26 @@ export default function ContactPage() {
             />
         </div>
 
-        <div id="contact" data-section="contact">
-            <ContactSplit
+        <div id="services" data-section="services">
+            <FeatureBento
+            animationType="slide-up"
+            textboxLayout="split"
             useInvertedBackground={false}
-            background={{ variant: "plain" }}
-            tag="Contactez-nous"
-            title="Prêt à transformer votre terrain?"
-            description="Contactez-nous aujourd'hui pour une estimation gratuite sans engagement."
-            imageSrc="http://img.b2bpic.net/free-photo/greenhouse-owner-presenting-flowers-options-potential-customer-retailer_158595-7007.jpg"
-            mediaAnimation="slide-up"
-            buttonText="Envoyer"
+            title="Nos services détaillés"
+            description="Des solutions professionnelles pour garder votre extérieur impeccable toute l'année."
+            features={[
+                { title: "Tonte de pelouse", description: "Tonte hebdomadaire avec ramassage de gazon pour une pelouse uniforme.", bentoComponent: "reveal-icon", icon: Scissors },
+                { title: "Nettoyage saisonnier", description: "Ouverture et fermeture, ratissage de feuilles et nettoyage des débris.", bentoComponent: "reveal-icon", icon: Leaf },
+                { title: "Taille de haies", description: "Taille précise de vos haies et arbustes par des experts paysagistes.", bentoComponent: "reveal-icon", icon: TreeDeciduous },
+                { title: "Aménagement", description: "Installation de paillis, plantation et entretien de plates-bandes.", bentoComponent: "reveal-icon", icon: Shovel },
+                { title: "Service hivernal", description: "Gestion des entrées et déneigement résidentiel ponctuel.", bentoComponent: "reveal-icon", icon: Snowflake }
+            ]}
             />
         </div>
 
         <div id="footer" data-section="footer">
             <FooterBaseCard
-            logoText="Entretien Saisonnier JRS inc.\nTel. 579-420-4510"
+            logoText="Entretien Saisonnier"
             columns={[
                 { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/pricing" }] },
                 { title: "Informations", items: [{ label: "À propos", href: "/about" }, { label: "FAQ", href: "/faq" }, { label: "Contact", href: "/contact" }] },

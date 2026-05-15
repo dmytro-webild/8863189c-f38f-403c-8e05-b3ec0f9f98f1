@@ -33,7 +33,7 @@ export default function LandingPage() {
       <NavbarStyleCentered
       navItems={[
         { name: "Accueil", id: "hero" },
-        { name: "Services", id: "services" },
+        { name: "Services", id: "/services" },
         { name: "Tarifs", id: "pricing" },
         { name: "Contact", id: "/contact" },
         { name: "Facebook", id: "https://www.facebook.com/" },
