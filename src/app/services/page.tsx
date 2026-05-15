@@ -6,8 +6,18 @@ import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarS
 import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import { Leaf, Scissors, TreeDeciduous, Shovel } from "lucide-react";
+import { useRouter } from 'next/navigation';
 
 export default function ServicesPage() {
+  const router = useRouter();
+
+  const features = [
+      { id: 'tonte', title: "Tonte de pelouse", description: "Tonte hebdomadaire avec ramassage de gazon pour une pelouse uniforme.", bentoComponent: "reveal-icon", icon: Scissors },
+      { id: 'nettoyage', title: "Nettoyage saisonnier", description: "Ouverture et fermeture, ratissage de feuilles et nettoyage des débris.", bentoComponent: "reveal-icon", icon: Leaf },
+      { id: 'taille', title: "Taille de haies", description: "Taille précise de vos haies et arbustes par des experts paysagistes.", bentoComponent: "reveal-icon", icon: TreeDeciduous },
+      { id: 'amenagement', title: "Aménagement", description: "Installation de paillis, plantation et entretien de plates-bandes.", bentoComponent: "reveal-icon", icon: Shovel }
+  ];
+
   return (
     <ThemeProvider
         defaultButtonVariant="hover-magnetic"
@@ -42,12 +52,10 @@ export default function ServicesPage() {
             useInvertedBackground={false}
             title="Nos services détaillés"
             description="Des solutions professionnelles pour garder votre extérieur impeccable toute l'année."
-            features={[
-                { title: "Tonte de pelouse", description: "Tonte hebdomadaire avec ramassage de gazon pour une pelouse uniforme.", bentoComponent: "reveal-icon", icon: Scissors },
-                { title: "Nettoyage saisonnier", description: "Ouverture et fermeture, ratissage de feuilles et nettoyage des débris.", bentoComponent: "reveal-icon", icon: Leaf },
-                { title: "Taille de haies", description: "Taille précise de vos haies et arbustes par des experts paysagistes.", bentoComponent: "reveal-icon", icon: TreeDeciduous },
-                { title: "Aménagement", description: "Installation de paillis, plantation et entretien de plates-bandes.", bentoComponent: "reveal-icon", icon: Shovel }
-            ]}
+            features={features.map(f => ({
+                ...f,
+                button: { text: "Voir détails", onClick: () => router.push(`/services/${f.id}`) }
+            }))}
             />
         </div>
 
