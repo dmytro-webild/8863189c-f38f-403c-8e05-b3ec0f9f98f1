@@ -9,7 +9,7 @@ import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
-import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
+import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 import { Leaf, Scissors } from "lucide-react";
@@ -130,19 +130,22 @@ export default function LandingPage() {
   </div>
 
   <div id="pricing" data-section="pricing">
-      <PricingCardOne
+      <PricingCardTwo
       textboxLayout="default"
       useInvertedBackground={true}
       animationType="slide-up"
       plans={[
         {
           id: "basic",          badge: "Basique",          price: "49$",          subtitle: "Pour les petits terrains",          features: ["Tonte hebdomadaire", "Soufflage des trottoirs", "Support par email"],
+          buttons: [{ text: "Choisir", href: "#contact" }]
         },
         {
           id: "pro",          badge: "Populaire",          price: "89$",          subtitle: "La tranquillité totale",          features: ["Tout du forfait basique", "Taille de haies mensuelle", "Fertilisation incluse"],
+          buttons: [{ text: "Choisir", href: "#contact" }]
         },
         {
           id: "premium",          badge: "Premium",          price: "149$",          subtitle: "Entretien complet pro",          features: ["Tout du forfait Pro", "Aménagement paysager", "Priorité intervention"],
+          buttons: [{ text: "Choisir", href: "#contact" }]
         },
       ]}
       title="Forfaits entretien"
