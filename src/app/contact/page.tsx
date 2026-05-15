@@ -49,8 +49,7 @@ export default function ContactPage() {
 
         <div id="footer" data-section="footer">
             <FooterBaseCard
-            logoText="Entretien Saisonnier JRS inc.
-Tel. 579-420-4510"
+            logoText="Entretien Saisonnier JRS inc.\nTel. 579-420-4510"
             columns={[
                 { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/pricing" }] },
                 { title: "Informations", items: [{ label: "À propos", href: "/about" }, { label: "FAQ", href: "/faq" }, { label: "Contact", href: "/contact" }] },
