@@ -35,7 +35,7 @@ export default function LandingPage() {
         { name: "Accueil", id: "hero" },
         { name: "Services", id: "services" },
         { name: "Tarifs", id: "pricing" },
-        { name: "Contact", id: "contact" },
+        { name: "Contact", id: "/contact" },
       ]}
       brandName="Entretien Saisonnier JRS inc."
     />
@@ -60,7 +60,7 @@ export default function LandingPage() {
         { imageSrc: "http://img.b2bpic.net/free-photo/senior-man-working-field-with-plants_329181-12433.jpg", imageAlt: "landscaping service garden maintenance" },
         { imageSrc: "http://img.b2bpic.net/free-photo/close-up-strong-man-gloves-cutting-leaves-his-garden-farmer-spending-summer-morning-working-garden-near-countryside-house_176420-19902.jpg", imageAlt: "landscaping service garden maintenance" },
       ]}
-      buttons={[{ text: "Demandez une soumission", href: "#contact" }]}
+      buttons={[{ text: "Demandez une soumission", href: "/contact" }]}
       avatars={[
         { src: "http://img.b2bpic.net/free-photo/front-view-senior-man-garden_23-2148256666.jpg", alt: "Front view senior man in garden" },
         { src: "http://img.b2bpic.net/free-photo/senior-man-working-field-with-flowers_329181-12453.jpg", alt: "Senior man working in the field with flowers" },
@@ -135,15 +135,15 @@ export default function LandingPage() {
       plans={[
         {
           id: "basic",          badge: "Basic ",          price: "45$ / semaine",          subtitle: "Forfait standard peut varier selon la superficie   ",          features: ["Tonte soignée", "Délimitation des bordures", "Support prioritaire"],
-          buttons: [{ text: "Commander", href: "#contact" }]
+          buttons: [{ text: "Commander", href: "/contact" }]
         },
         {
           id: "pro",          badge: "Populaire",          price: "180$ / heure",          subtitle: "La tranquillité totale",          features: ["", "Taille de haies et arbuste", "Fertilisation saisonnière", "Nettoyage débris"],
-          buttons: [{ text: "Commander", href: "#contact" }]
+          buttons: [{ text: "Commander", href: "/contact" }]
         },
         {
           id: "premium",          badge: "Expert",          price: "180$ / heure",          subtitle: "Entretien paysager complet",          features: ["Ramassage des feuille a l'automne  ", "Entretien complet des plates-bandes", "Traitement horticole", "Priorité d'intervention"],
-          buttons: [{ text: "Commander", href: "#contact" }]
+          buttons: [{ text: "Commander", href: "/contact" }]
         },
       ]}
       title="Forfaits entretien"
@@ -184,25 +184,12 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="contact" data-section="contact">
-      <ContactSplit
-      useInvertedBackground={false}
-      background={{ variant: "plain" }}
-      tag="Contactez-nous"
-      title="Prêt à transformer votre terrain?"
-      description="Contactez-nous aujourd'hui pour une estimation gratuite sans engagement."
-      imageSrc="http://img.b2bpic.net/free-photo/greenhouse-owner-presenting-flowers-options-potential-customer-retailer_158595-7007.jpg"
-      mediaAnimation="slide-up"
-      buttonText="Envoyer"
-    />
-  </div>
-
   <div id="footer" data-section="footer">
       <FooterBaseCard
       logoText="Entretien Saisonnier"
       columns={[
-        { title: "Liens", items: [{ label: "Accueil", href: "#hero" }, { label: "Services", href: "#services" }, { label: "Tarifs", href: "#pricing" }] },
-        { title: "Informations", items: [{ label: "À propos", href: "#about" }, { label: "FAQ", href: "#faq" }, { label: "Contact", href: "#contact" }] },
+        { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/pricing" }] },
+        { title: "Informations", items: [{ label: "À propos", href: "/about" }, { label: "FAQ", href: "/faq" }, { label: "Contact", href: "/contact" }] },
       ]}
       copyrightText="© 2025 Entretien Saisonnier | Granby, QC"
     />
