@@ -12,30 +12,10 @@ export default function ServicesPage() {
   const router = useRouter();
 
   const features = [
-    { 
-      title: "Tonte de pelouse", 
-      description: "Tonte hebdomadaire avec ramassage de gazon pour une pelouse uniforme.", 
-      bentoComponent: "reveal-icon" as const, 
-      icon: Scissors 
-    },
-    { 
-      title: "Nettoyage saisonnier", 
-      description: "Ouverture et fermeture, ratissage de feuilles et nettoyage des débris.", 
-      bentoComponent: "reveal-icon" as const, 
-      icon: Leaf 
-    },
-    { 
-      title: "Taille de haies", 
-      description: "Taille précise de vos haies et arbustes par des experts paysagistes.", 
-      bentoComponent: "reveal-icon" as const, 
-      icon: TreeDeciduous 
-    },
-    { 
-      title: "Aménagement", 
-      description: "Installation de paillis, plantation et entretien de plates-bandes.", 
-      bentoComponent: "reveal-icon" as const, 
-      icon: Shovel 
-    }
+    { title: "Tonte de pelouse", description: "Tonte hebdomadaire avec ramassage.", bentoComponent: "reveal-icon" as const, icon: Scissors },
+    { title: "Nettoyage", description: "Ouverture et fermeture.", bentoComponent: "reveal-icon" as const, icon: Leaf },
+    { title: "Taille de haies", description: "Taille précise par experts.", bentoComponent: "reveal-icon" as const, icon: TreeDeciduous },
+    { title: "Aménagement", description: "Installation de paillis, plantation.", bentoComponent: "reveal-icon" as const, icon: Shovel }
   ];
 
   return (
@@ -58,7 +38,7 @@ export default function ServicesPage() {
                 { name: "Accueil", id: "/" },
                 { name: "Services", id: "/services" },
                 { name: "Tarifs", id: "/pricing" },
-                { name: "Contact", id: "/contact" },
+                { name: "Soumission", id: "/soumission" },
                 { name: "Facebook", id: "https://www.facebook.com/" },
             ]}
             brandName="Entretien Saisonnier JRS inc."
@@ -71,11 +51,8 @@ export default function ServicesPage() {
             textboxLayout="split"
             useInvertedBackground={false}
             title="Nos services détaillés"
-            description="Des solutions professionnelles pour garder votre extérieur impeccable toute l'année."
-            features={features.map(f => ({
-                ...f,
-                button: { text: "Voir détails", onClick: () => router.push(`/services/${f.title.toLowerCase().replace(/\s+/g, '-')}`) }
-            }))}
+            description="Solutions professionnelles toute l'année."
+            features={features.map(f => ({ ...f, button: { text: "Soumission", href: "/soumission" } }))}
             />
         </div>
 
@@ -84,7 +61,7 @@ export default function ServicesPage() {
             logoText="Entretien Saisonnier"
             columns={[
                 { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/pricing" }] },
-                { title: "Informations", items: [{ label: "À propos", href: "/about" }, { label: "FAQ", href: "/faq" }, { label: "Contact", href: "/contact" }] },
+                { title: "Informations", items: [{ label: "À propos", href: "/about" }, { label: "FAQ", href: "/faq" }, { label: "Soumission", href: "/soumission" }] },
             ]}
             copyrightText="© 2025 Entretien Saisonnier | Granby, QC"
             />
