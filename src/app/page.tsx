@@ -51,7 +51,7 @@ export default function LandingPage() {
         { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778856008662-2kt0ravy.png", imageAlt: "landscaping service garden maintenance" },
       ]}
       rightCarouselItems={[
-        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1778856364767-3bjl8sig.jpg", imageAlt: "landscaping service garden maintenance" },
+        { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DlQE9j5RwG1pF8sleGqSn5dJUd/uploaded-1779122427608-wjn8bwlq.jpg", imageAlt: "landscaping service garden maintenance" },
       ]}
       buttons={[{ text: "Demandez une soumission", href: "/soumission" }]}
       avatarText="Reconnu par plus de 100+ clients locaux"
