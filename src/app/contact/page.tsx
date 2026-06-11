@@ -41,7 +41,16 @@ export default function ContactPage() {
             tag="Contactez-nous"
             title="Prêt à transformer votre terrain?"
             description="Remplissez vos détails pour obtenir une soumission."
-            onSubmit={(email) => { window.location.href = `mailto:entretien.saisonnier.rv@gmail.com?subject=Nouvelle demande de service&body=Courriel: ${email}%0D%0A%0D%0ANom:%0D%0AAdresse:%0D%0AService souhaité:%0D%0A`; }}
+            onSubmit={(email) => {
+              const subject = encodeURIComponent("Nouvelle demande de service");
+              const body = encodeURIComponent(
+                `Courriel: ${email}\n\n` +
+                `Nom:\n` +
+                `Adresse:\n` +
+                `Service souhaité:`
+              );
+              window.open(`mailto:entretien.saisonnier.rv@gmail.com?subject=${subject}&body=${body}`, '_blank');
+            }}
             buttonText="Envoyer"
             />
         </div>
