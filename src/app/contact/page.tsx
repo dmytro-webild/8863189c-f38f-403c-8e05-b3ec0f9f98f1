@@ -26,6 +26,7 @@ export default function ContactPage() {
             navItems={[
                 { name: "Accueil", id: "/" },
                 { name: "Services", id: "/services" },
+                { name: "Tarifs", id: "/pricing" },
                 { name: "Contact", id: "/contact" },
                 { name: "Facebook", id: "https://www.facebook.com/search/top?q=entretien%20saisonnier%20jrs%20inc.&locale=fr_CA" },
             ]}
@@ -49,7 +50,7 @@ export default function ContactPage() {
             <FooterBaseCard
             logoText="Entretien Saisonnier JRS inc.\nTel. 579-420-4510"
             columns={[
-                { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }] },
+                { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/pricing" }] },
                 { title: "Informations", items: [{ label: "À propos", href: "/about" }, { label: "FAQ", href: "/faq" }, { label: "Contact", href: "/contact" }] },
             ]}
             copyrightText="© 2025 Entretien Saisonnier | Granby, QC"
