@@ -8,8 +8,7 @@ import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
-import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
-import PricingCardTwo from '@/components/sections/pricing/PricingCardTwo';
+
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import { Leaf, Scissors } from "lucide-react";
 
@@ -33,7 +32,6 @@ export default function LandingPage() {
       navItems={[
         { name: "Accueil", id: "hero" },
         { name: "Services", id: "/services" },
-        { name: "Tarifs", id: "pricing" },
         { name: "Soumission", id: "/soumission" },
         { name: "Facebook", id: "https://www.facebook.com/search/top?q=entretien%20saisonnier%20jrs%20inc.&locale=fr_CA" },
       ]}
@@ -89,26 +87,13 @@ export default function LandingPage() {
     />
   </div>
 
-  <div id="pricing" data-section="pricing">
-      <PricingCardTwo
-      textboxLayout="split-actions"
-      useInvertedBackground={true}
-      animationType="slide-up"
-      plans={[
-        { id: "basic", badge: "Basic", price: "45$ / semaine", subtitle: "Forfait standard", features: ["Tonte soignée", "Délimitation", "Support"], buttons: [{ text: "Commander", href: "/soumission" }] },
-        { id: "pro", badge: "Populaire", price: "180$ / heure", subtitle: "Tranquillité totale", features: ["Taille de haies", "Fertilisation"], buttons: [{ text: "Commander", href: "/soumission" }] },
-        { id: "premium", badge: "Expert", price: "180$ / heure", subtitle: "Complet", features: ["Ramassage feuilles", "Plates-bandes"], buttons: [{ text: "Commander", href: "/soumission" }] },
-      ]}
-      title="Forfaits entretien"
-      description="Des solutions sur mesure pour votre terrain."
-    />
-  </div>
+
 
   <div id="footer" data-section="footer">
       <FooterBaseCard
       logoText="Entretien Saisonnier"
       columns={[
-        { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/pricing" }] },
+        { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }] },
         { title: "Informations", items: [{ label: "À propos", href: "/about" }, { label: "FAQ", href: "/faq" }, { label: "Soumission", href: "/soumission" }] },
       ]}
       copyrightText="© 2025 Entretien Saisonnier | Granby, QC"
