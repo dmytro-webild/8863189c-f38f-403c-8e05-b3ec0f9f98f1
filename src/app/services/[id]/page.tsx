@@ -30,7 +30,7 @@ export default function ServiceDetailPage() {
                 { name: "Accueil", id: "/" },
                 { name: "Services", id: "/services" },
                 { name: "Tarifs", id: "/#pricing" },
-                { name: "Contact", id: "/contact" },
+                { name: "Soumission", id: "/soumission" },
                 { name: "Facebook", id: "https://www.facebook.com/search/top?q=entretien%20saisonnier%20jrs%20inc.&locale=fr_CA" },
             ]}
             brandName="Entretien Saisonnier JRS inc."
@@ -50,7 +50,7 @@ export default function ServiceDetailPage() {
             logoText="Entretien Saisonnier"
             columns={[
                 { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/#pricing" }] },
-                { title: "Informations", items: [{ label: "À propos", href: "/#about" }, { label: "Contact", href: "/contact" }] },
+                { title: "Informations", items: [{ label: "À propos", href: "/#about" }, { label: "Soumission", href: "/soumission" }] },
             ]}
             copyrightText="© 2025 Entretien Saisonnier | Granby, QC"
             />
