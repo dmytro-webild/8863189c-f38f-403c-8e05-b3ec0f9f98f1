@@ -53,7 +53,7 @@ export default function SoumissionPage() {
                 `Adresse: ${data.address}\n` +
                 `Message: ${data.message}`
               );
-              window.location.href = `mailto:entretien.saisonnier.rv@gmail.com?subject=${subject}&body=${body}`;
+              window.open(`mailto:entretien.saisonnier.rv@gmail.com?subject=${subject}&body=${body}`, '_blank');
             }}
             useInvertedBackground={false}
             />
