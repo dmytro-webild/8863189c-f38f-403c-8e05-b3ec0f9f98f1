@@ -108,8 +108,8 @@ export default function LandingPage() {
       <FooterBaseCard
       logoText="Entretien Saisonnier"
       columns={[
-        { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/pricing" }] },
-        { title: "Informations", items: [{ label: "À propos", href: "/about" }, { label: "FAQ", href: "/faq" }, { label: "Soumission", href: "/soumission" }] },
+        { title: "Liens", items: [{ label: "Accueil", href: "/" }, { label: "Services", href: "/services" }, { label: "Tarifs", href: "/#pricing" }] },
+        { title: "Informations", items: [{ label: "À propos", href: "/#about" }, { label: "Soumission", href: "/soumission" }] },
       ]}
       copyrightText="© 2025 Entretien Saisonnier | Granby, QC"
     />
