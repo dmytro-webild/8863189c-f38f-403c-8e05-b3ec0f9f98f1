@@ -45,7 +45,16 @@ export default function SoumissionPage() {
             ]}
             textarea={{ name: "message", placeholder: "Détails du service souhaité (ex: tonte, taille, nettoyage...)", rows: 4, required: true }}
             buttonText="Envoyer ma demande"
-            onSubmit={(data) => { console.log("Form submitted:", data); alert("Merci! Votre demande a bien été envoyée."); }}
+            onSubmit={(data) => {
+              const subject = encodeURIComponent("Nouvelle demande de soumission");
+              const body = encodeURIComponent(
+                `Nom: ${data.name}\n` +
+                `Courriel: ${data.email}\n` +
+                `Adresse: ${data.address}\n` +
+                `Message: ${data.message}`
+              );
+              window.location.href = `mailto:entretien.saisonnier.rv@gmail.com?subject=${subject}&body=${body}`;
+            }}
             useInvertedBackground={false}
             />
         </div>
