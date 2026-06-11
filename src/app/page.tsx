@@ -8,7 +8,7 @@ import FeatureBento from '@/components/sections/feature/FeatureBento';
 import FooterBaseCard from '@/components/sections/footer/FooterBaseCard';
 import HeroSplitDoubleCarousel from '@/components/sections/hero/HeroSplitDoubleCarousel';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
-
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardFour from '@/components/sections/product/ProductCardFour';
 import { Leaf, Scissors } from "lucide-react";
 
@@ -28,7 +28,7 @@ export default function LandingPage() {
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
-      <NavbarStyleCentered
+      <NavbarStyleApple
       navItems={[
         { name: "Accueil", id: "hero" },
         { name: "Services", id: "/services" },
